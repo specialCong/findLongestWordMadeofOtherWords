@@ -18,7 +18,7 @@ public class LongestWord {
 	
 	static class LengthComparator implements Comparator<String> {
 		public int compare(String o1, String o2) {
-			return o2.length() - o1.length(); // sort array of words by length from max to min
+			return o2.length() - o1.length(); // sort array of words by length in descending order
 		}
 	}
 	
@@ -28,7 +28,7 @@ public class LongestWord {
 		for (String str : arr) {
 			map.put(str, true);
 		}
-		Arrays.sort(arr, new LengthComparator()); // Sort by length
+		Arrays.sort(arr, new LengthComparator()); // Sort by length in descending order
 
 		for (String s : arr) {
 			k += 1;
