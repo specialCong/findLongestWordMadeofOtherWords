@@ -94,9 +94,8 @@ public class LongestWord {
 	public static String[] createGiantArray() throws FileNotFoundException {
 		List<String> list = new ArrayList<String>();
 		
-		//Path of input file 
 		BufferedReader br = new BufferedReader(new FileReader(
-				"E:/wordsforproblem.txt"));
+				"E:/wordsforproblem.txt")); //Path of input file, modify as you wish
 		String str = null;
 		try {
 			while ((str = br.readLine()) != null && !"\n".equals(str)) {
